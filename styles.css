@@ -1,4 +1,4 @@
-/* reseteo de estilos */
+/* Reseteo de estilos */
 
 *,
 *::after,
@@ -17,11 +17,12 @@ html{
 }
 
 body{
-    background-color: red;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     height: 100vh;
 }
+
+/* Estilos generales  */
 
 .background{
     margin-top: 0;
@@ -46,10 +47,11 @@ h1{
 }
 
 form{
+    display: flex;
+    justify-content: center;
     outline: none;
     margin: auto;
     margin-top: 25px;
-    display: flex;
     width: 85%;
 }
 
@@ -60,6 +62,8 @@ form input{
     border-bottom-left-radius: 10px;
     width: 100%;
     padding: 18px 20px 18px 20px;
+    border: none;
+    max-width: 400px;
 }
 
 form button{
@@ -69,6 +73,7 @@ form button{
     width: 60px;
     background-color: black;
     border: none;
+    cursor: pointer;
 }
 
 form img{
@@ -110,9 +115,33 @@ p{
     font-weight: 700;
     font-size: 18px;
 }
+
 .map{
     margin-top: 0;
     z-index: 10;
-    height: 60vh;
+    height: 75vh;
     width: 100%;
+}
+
+.results{
+    color: var(--verydarkgray);
+    font-weight: 500;
+}
+
+/* Media Querys */
+
+@media screen and (min-width: 808px){
+    .ipinfo{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+    padding: 0 20px 25px 20px;
+    }
+
+    .ipinfo div{
+        width: 24%;
+    }
 }
